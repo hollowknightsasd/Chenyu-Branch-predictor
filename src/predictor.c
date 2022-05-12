@@ -295,7 +295,7 @@ init_Perceptron(){
 	
 	Perceptrons_Table = (int**) malloc(historyBits * sizeof(int*)); //First Dimension of the array, the total index is 128
 	//Size of each weights in index, Total Size = 31*8*128+31*2 = 31806 bits < 32K+320 bits//
-	//7 comes from log2(1.93*N+14)+1, N is the history bits.                              //
+	//8 comes from log2(1.93*N+14)+1, N is the history bits.                              //
 	for(i = 0; i <= historyBits; i++){
 		Perceptrons_Table[i] = (int*) malloc(history_Bits * sizeof(int)); 
 	}
